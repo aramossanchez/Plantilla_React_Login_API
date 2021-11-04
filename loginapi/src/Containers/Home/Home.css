@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* CONTENEDOR DE HOME */
+#container-home{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(126, 126, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url('../../img/fondo.jpg');
+    background-size: cover;
+}
+/*MENSAJE A LA IZQUIERDA DE PANTALLA PRINCIPAL*/
+#mensaje-bienvenida{
+    color: white;
+    width: 35%;
+    height: calc(100% - 9em);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 9em;
+}
+#mensaje-bienvenida h1{
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+}
+/*CUADRO LOGIN EN PANTALLA PRINCIPAL*/
+#cuadro-login{
+    width: 25%;
+    background-color: rgba(248, 248, 248, 0.856);
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#cuadro-login h1{
+    color: rgb(150, 150, 150);
+    align-self: flex-start;
+    margin: 1em 0 0 1em;
+}
+#cuadro-login input{
+    all: unset;
+    width: 80%;
+    height: 2em;
+    margin-bottom: 2em;
+    border: 2px solid transparent;
+    border-bottom: 2px solid black;
+    text-align: left;
+    padding: 0 1em;
+}
+#cuadro-login input:focus{
+    background-color: white;
+    border: 2px solid rgb(87, 87, 87);
+}
+
+#boton-login{
+    width: auto;
+    background-color: rgb(172, 172, 172);
+    color: rgb(255, 255, 255);
+    padding: 0.5em 2em;
+    align-self: flex-end;
+    margin: 0 2.5em 2.5em 0;
+    transition: 0.3s;
+}
+
+#boton-login:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(172, 172, 172);
+}
