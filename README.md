@@ -3,7 +3,7 @@
 ## Plantilla de una pantalla de login hecha en react, que conecta con API.
 Plantilla en la que existe una aplicación hecha en React, que interactua con los endpoints de la API creada en el siguiente repositorio: https://github.com/aramossanchez/Proyecto_VideoClub_API
 ***
-![Vista Inicial APP React](screenshots/screenshot.jpg)
+![Vista Inicial APP React](/loginapi/src/screenshots/screenshot.jpg)
 ***
 
 ## Pre-requisitos del proyecto para hacerlo funcionar en tu equipo local:

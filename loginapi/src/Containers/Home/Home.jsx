@@ -16,10 +16,6 @@ const Home = () =>{
     const introducirCredenciales = (e) =>{
         setCredenciales({...credenciales, [e.target.name]: e.target.value})
     }
-    
-    useEffect(()=>{
-        
-    })
 
     const loguear = async () => {
 
@@ -29,6 +25,7 @@ const Home = () =>{
         };
 
         let res = await axios.post("https://aramossanchez-videoclub-api.herokuapp.com/usuarios/login", body);
+        
         try {
             localStorage.setItem("datosLogin", JSON.stringify(res.data));
             navigate("/profile");
@@ -45,7 +42,7 @@ const Home = () =>{
                 <p>Tienes a tu disposición un catálogo GIGANTE de películas para alquilar. Navega por nuestra web,
                 elije la película que te apetezca, haz el alquiler y espera tranquilamente en tu casa hasta que te la llevemos.
                 Si ya tienes cuenta con nosotros, solo tienes que loguearte. Si quieres tener una cuenta con nosotros, contacta
-                en la sección correspondiente y te lo gestionaremos a la mayor brevedad posible.</p>                
+                en la sección correspondiente y te lo gestionaremos a la mayor brevedad posible.</p>
             </div>
             <div id="cuadro-login">
                 <h1>Login</h1>
